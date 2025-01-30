@@ -1,13 +1,13 @@
 
-# **react-audio-voice-recorder**
+# **react-audio-voice-recorder-next**
 An audio recording helper for React. Provides a component and a hook to help with audio recording.
 
 [![NPM downloads][npm-download-img]][npm-download-url]
 [![Run ESlint][eslint-img]][eslint-url]
-[![Run Unit tests][test-img]][test-url] 
+[![Run Unit tests][test-img]][test-url]
 
-[npm-download-img]: https://img.shields.io/npm/dm/react-audio-voice-recorder.svg?style=round-square
-[npm-download-url]: https://www.npmjs.com/package/react-audio-voice-recorder
+[npm-download-img]: https://img.shields.io/npm/dm/react-audio-voice-recorder-next.svg?style=round-square
+[npm-download-url]: https://www.npmjs.com/package/react-audio-voice-recorder-next
 [eslint-img]: https://github.com/samhirtarif/react-audio-recorder/actions/workflows/lint.yml/badge.svg
 [eslint-url]: https://github.com/samhirtarif/react-audio-recorder/actions/workflows/lint.yml
 [test-img]: https://github.com/samhirtarif/react-audio-recorder/actions/workflows/test.yml/badge.svg
@@ -15,11 +15,11 @@ An audio recording helper for React. Provides a component and a hook to help wit
 
 ## Installation
 ```sh
-npm install react-audio-voice-recorder
+npm install react-audio-voice-recorder-next
 ```
 
 ```sh
-yarn add react-audio-voice-recorder
+yarn add react-audio-voice-recorder-next
 ```
 
 ## Migrating from v1 → v2
@@ -35,7 +35,7 @@ You can use an out-of-the-box component that takes `onRecordingComplete` method 
 ```js
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { AudioRecorder } from 'react-audio-voice-recorder';
+import { AudioRecorder } from 'react-audio-voice-recorder-next';
 
 const addAudioElement = (blob) => {
   const url = URL.createObjectURL(blob);
@@ -47,12 +47,12 @@ const addAudioElement = (blob) => {
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <AudioRecorder 
+    <AudioRecorder
       onRecordingComplete={addAudioElement}
       audioTrackConstraints={{
         noiseSuppression: true,
         echoCancellation: true,
-      }} 
+      }}
       downloadOnSavePress={true}
       downloadFileExtension="webm"
     />
@@ -98,7 +98,7 @@ The hook returns the following:
 ### Sample usage of hook
 
 ```js
-  import { useAudioRecorder } from 'react-audio-voice-recorder';
+  import { useAudioRecorder } from 'react-audio-voice-recorder-next';
   // ...
   // ...
   const {
@@ -125,7 +125,7 @@ This is for scenarios where you would wish to control the `AudioRecorder` compon
 #### Sample usage ([See it in action](https://stackblitz.com/edit/react-ts-ryj6jz?file=App.tsx))
 
 ```js
-import { AudioRecorder, useAudioRecorder } from 'react-audio-voice-recorder';
+import { AudioRecorder, useAudioRecorder } from 'react-audio-voice-recorder-next';
 
 const ExampleComponent = () => {
   const recorderControls = useAudioRecorder()
@@ -139,7 +139,7 @@ const ExampleComponent = () => {
 
   return (
     <div>
-      <AudioRecorder 
+      <AudioRecorder
         onRecordingComplete={(blob) => addAudioElement(blob)}
         recorderControls={recorderControls}
       />

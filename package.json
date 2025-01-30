@@ -1,7 +1,7 @@
 {
-  "name": "react-audio-voice-recorder",
+  "name": "react-audio-voice-recorder-next",
   "private": false,
-  "version": "2.2.0",
+  "version": "2.2.1",
   "type": "module",
   "license": "MIT",
   "author": "Samhir Tarif",
@@ -34,17 +34,17 @@
   "files": [
     "dist"
   ],
-  "module": "./dist/react-audio-voice-recorder.es.js",
+  "module": "./dist/react-audio-voice-recorder-next.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/react-audio-voice-recorder.es.js"
+      "import": "./dist/react-audio-voice-recorder-next.es.js"
     }
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint src/**/*.ts{,x}",
     "lint:fix": "npm run lint -- --fix",
@@ -98,6 +98,7 @@
   "dependencies": {
     "@ffmpeg/ffmpeg": "^0.12.15",
     "ajv": "^8.17.1",
-    "react-audio-visualize": "^1.2.0"
+    "react-audio-visualize": "^1.2.0",
+    "tsc": "^2.0.4"
   }
 }
