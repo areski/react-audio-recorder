@@ -53,8 +53,8 @@
     "build-storybook": "build-storybook"
   },
   "peerDependencies": {
-    "react": ">=16.2.0",
-    "react-dom": ">=16.2.0"
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
