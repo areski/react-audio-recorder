@@ -1,5 +1,5 @@
 {
-  "name": "react-audio-voice-recorder-next",
+  "name": "react-audio-voice-recorder",
   "private": false,
   "version": "2.2.1",
   "type": "module",
@@ -34,12 +34,12 @@
   "files": [
     "dist"
   ],
-  "module": "./dist/react-audio-voice-recorder-next.es.js",
+  "module": "./dist/react-audio-voice-recorder.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/react-audio-voice-recorder-next.es.js"
+      "import": "./dist/react-audio-voice-recorder.es.js"
     }
   },
   "scripts": {
